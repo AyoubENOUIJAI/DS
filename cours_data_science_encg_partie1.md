@@ -5,6 +5,8 @@
 
 # Ayoub Enouijai
 
+<img src="AYOUB PIC.jpg" style="height:464px;margin-right:432px"/>
+
 # PARTIE 1 : FONDAMENTAUX DE LA SCIENCE DES DONNÉES
 
 ---
