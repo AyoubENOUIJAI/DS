@@ -3,6 +3,8 @@
 
 ---
 
+**Ayoub Enouijai**
+
 # PARTIE 1 : FONDAMENTAUX DE LA SCIENCE DES DONNÉES
 
 ---
