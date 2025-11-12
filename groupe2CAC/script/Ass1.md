@@ -1,22 +1,25 @@
-# 👋 Assignment 1 – Ayoub ENOUJAI
+# 🧾 Assignment 1 – Ayoub ENOUJAI
 
 ![Ayoub ENOUJAI](../script/AYOUB%20PIC.jpg)
 
 ---
 
-## 🎓 Étudiant à l’ENCG Settat – Groupe 2 CAC
+## 👨‍🎓 Étudiant à l’ENCG Settat – Groupe 2 CAC  
+**Spécialité : Gestion – Semestre 3**
 
-### 📚 Modules
-| Module | 
-|:--------------------------------------------|:-------------:|
-| Bases de Données et Data Science 
-| Comptabilité Approfondie | (4) |
-| Consolidation et Normes IFRS | (4) |
-| Risk Management et Contrôle Interne | (4) |
-| Aide à la Décision et Recherche Opérationnelle | (4) |
-| ODD et Actions Sociales | (4) |
-| Communication Internationale *(Espagnol & Allemand, Italien ou Mandarin)* | (3) |
 ---
 
-📅 *Année universitaire : 2025*  
+### 📚 Modules du Semestre 3
 
+- Bases de Données et Data Science  
+- Comptabilité Approfondie  
+- Consolidation et Normes IFRS  
+- Risk Management et Contrôle Interne  
+- Aide à la Décision et Recherche Opérationnelle  
+- ODD et Actions Sociales  
+- Communication Internationale *(Espagnol & Allemand, Italien ou Mandarin)*  
+
+---
+
+📅 **Année universitaire : 2025**  
+✍️ *Rendu par : Ayoub ENOUJAI*
