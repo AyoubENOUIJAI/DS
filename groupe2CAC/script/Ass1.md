@@ -98,3 +98,11 @@ print(wine_quality.variables)
 
 
 ---
+
+
+
+
+
+
+
+## 📦 2. Data presentation
