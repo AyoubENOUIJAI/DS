@@ -1,6 +1,6 @@
 # 🧾 Assignment 1 – Ayoub ENOUJAI
 
-<img src="AYOUB PIC.jpg" style="height:464px;margin-right:432px"/>
+![Ayoub's Picture](AYOUB PIC.jpg)
 
 ---
 
@@ -107,21 +107,19 @@ print(wine_quality.variables)
 This histogram visualizes the frequency of each wine quality score. You can see which scores are most common and the overall distribution of quality in the dataset.
 
 
-![Image 3](3.png)
+![Histogram](HISTOGRAME.png)
 
 These box plots visualize the distribution of each physicochemical input feature across different wine quality scores. This can help identify which features tend to have higher or lower values for wines with better or worse quality, suggesting potential relationships between the features and the target variable.
 
 
 
-INSERT IMAGE 2 HERE
-
+![Image 2](IMAGE 2.png)
 
 These scatter plots illustrate the relationship between two input features, with the points colored according to the wine quality score. This can reveal patterns, clusters, or trends where certain combinations of feature values are associated with higher or lower quality wines. For instance, you might observe regions in the plot where high-quality wines tend to cluster, indicating optimal ranges for these feature pairs.
 
 
 
-INSERT IMAGE 3 
-
+![Image 3](3.png)
 
 
 This heatmap displays the pairwise correlation coefficients between all the features and the target variable ('quality').
@@ -137,16 +135,14 @@ This plot is useful for quickly identifying which features might be strongly pre
 hese violin plots compare the distributions of each physicochemical feature for red versus white wines. Each plot shows the density estimation of the feature's values for each wine color, allowing you to easily see differences in median, spread, and overall shape of the distributions between the two types of wine. This can highlight features that are distinct characteristics of red or white wines.
 
 
-INSERT IMAGE 4 
-
+![Image 4](4.png)
 
 
 These bar charts display the average value of each physicochemical feature for each wine quality score. This visualization helps to clearly see trends: whether the average of a particular feature generally increases, decreases, or stays relatively stable as the wine quality improves or declines. This can provide direct insights into which chemical properties are most strongly associated with different quality ratings.
 
 
 
-INSERT IMAGE 5
-
+![Image 5](5.png)
 
 
 
