@@ -99,10 +99,70 @@ print(wine_quality.variables)
 
 ---
 
-
-
-
-
-
+```
 
 ## 📦 2. Data presentation
+
+
+This histogram visualizes the frequency of each wine quality score. You can see which scores are most common and the overall distribution of quality in the dataset.
+
+
+INSERT IMAGE HERE
+
+
+These box plots visualize the distribution of each physicochemical input feature across different wine quality scores. This can help identify which features tend to have higher or lower values for wines with better or worse quality, suggesting potential relationships between the features and the target variable.
+
+
+
+INSERT IMAGE 2 HERE
+
+
+These scatter plots illustrate the relationship between two input features, with the points colored according to the wine quality score. This can reveal patterns, clusters, or trends where certain combinations of feature values are associated with higher or lower quality wines. For instance, you might observe regions in the plot where high-quality wines tend to cluster, indicating optimal ranges for these feature pairs.
+
+
+
+INSERT IMAGE 3 
+
+
+
+This heatmap displays the pairwise correlation coefficients between all the features and the target variable ('quality').
+
+Color Intensity: Stronger colors (closer to dark red or dark blue) indicate stronger correlations.
+Color Hue: Red hues indicate positive correlations (as one variable increases, the other tends to increase), while blue hues indicate negative correlations (as one variable increases, the other tends to decrease).
+Numbers: The annotated numbers are the correlation coefficients, ranging from -1 (perfect negative correlation) to 1 (perfect positive correlation), with 0 indicating no linear correlation.
+This plot is useful for quickly identifying which features might be strongly predictive of wine quality, or which features are highly correlated with each other (which could indicate multicollinearity).
+
+
+
+
+hese violin plots compare the distributions of each physicochemical feature for red versus white wines. Each plot shows the density estimation of the feature's values for each wine color, allowing you to easily see differences in median, spread, and overall shape of the distributions between the two types of wine. This can highlight features that are distinct characteristics of red or white wines.
+
+
+INSERT IMAGE 4 
+
+
+
+These bar charts display the average value of each physicochemical feature for each wine quality score. This visualization helps to clearly see trends: whether the average of a particular feature generally increases, decreases, or stays relatively stable as the wine quality improves or declines. This can provide direct insights into which chemical properties are most strongly associated with different quality ratings.
+
+
+
+INSERT IMAGE 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
