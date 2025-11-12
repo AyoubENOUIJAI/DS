@@ -5,7 +5,7 @@
 ---
 
 ## 👨‍🎓 Étudiant à l’ENCG Settat – Groupe 2 CAC  
-**Spécialité : Gestion – Semestre 3**
+**Spécialité : controle audit et conseil Gestion – Semestre 3**
 
 ---
 
