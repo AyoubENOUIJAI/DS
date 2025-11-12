@@ -72,12 +72,16 @@ The dataset’s main goal is to explore the relationship between **objective che
 
 ---
 
-🧪 Wine Quality Analysis — Code Summary
+# 🧪 Wine Quality Analysis — Code Summary
 
-This notebook analyzes the Wine Quality dataset (from the UCI Machine Learning Repository).
-You have already documented the dataset and its variables, so this summary focuses on the code workflow and visualization process.
+This notebook analyzes the **Wine Quality dataset** (from the UCI Machine Learning Repository).  
+You have already documented the dataset and its variables, so this summary focuses on the **code workflow and visualization process**.
 
-📦 1. Importing and Fetching the Dataset
+---
+
+## 📦 1. Importing and Fetching the Dataset
+
+```python
 !pip install ucimlrepo
 from ucimlrepo import fetch_ucirepo
 
@@ -92,21 +96,5 @@ y = wine_quality.data.targets
 print(wine_quality.metadata)
 print(wine_quality.variables)
 
-
-Explanation:
-
-The dataset is fetched directly from the UCI repository using the ucimlrepo library.
-
-X contains the wine’s physicochemical features (e.g., acidity, sugar, etc.).
-
-y holds the quality score assigned to each wine sample.
-
-Metadata and variable details are displayed for reference.
-## 📚 References
-
-- [UCI Machine Learning Repository — Wine Quality Dataset](https://archive.ics.uci.edu/dataset/186/wine+quality)  
-- Cortez, P., Cerdeira, A., Almeida, F., Matos, T., & Reis, J. (2009).  
-  *Modeling wine preferences by data mining from physicochemical properties.*  
-  Decision Support Systems, 47(4), 547-553.
 
 ---
