@@ -1,6 +1,6 @@
 # 🧾 Assignment 1 – Ayoub ENOUJAI
 
-![Ayoub ENOUJAI](../script/AYOUB%20PIC.jpg)
+<img src="AYOUB PIC.jpg" style="height:464px;margin-right:432px"/>
 
 ---
 
