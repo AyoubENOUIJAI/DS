@@ -109,17 +109,108 @@ This histogram visualizes the frequency of each wine quality score. You can see 
 
 ![Histogram](HISTOGRAME.png)
 
-These box plots visualize the distribution of each physicochemical input feature across different wine quality scores. This can help identify which features tend to have higher or lower values for wines with better or worse quality, suggesting potential relationships between the features and the target variable.
 
+THE CODE :
+
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Create a histogram of the 'quality' scores
+plt.figure(figsize=(10, 6))
+sns.histplot(y['quality'], bins=range(0, 11), kde=False, color='skyblue', edgecolor='black')
+plt.title('Distribution of Wine Quality Scores')
+plt.xlabel('Quality Score')
+plt.ylabel('Number of Wines')
+plt.xticks(range(0, 11)) # Set x-ticks to represent each quality score
+plt.grid(axis='y', alpha=0.75)
+plt.show()
+```
+
+
+
+
+
+These box plots visualize the distribution of each physicochemical input feature across different wine quality scores. This can help identify which features tend to have higher or lower values for wines with better or worse quality, suggesting potential relationships between the features and the target variable.
 
 
 ![Image 2](IMAGE 2.png)
 
-These scatter plots illustrate the relationship between two input features, with the points colored according to the wine quality score. This can reveal patterns, clusters, or trends where certain combinations of feature values are associated with higher or lower quality wines. For instance, you might observe regions in the plot where high-quality wines tend to cluster, indicating optimal ranges for these feature pairs.
+THE CODE :
+```python
 
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Combine features (X) and target (y) for easier plotting
+# We need to reset the index of y to ensure proper concatenation
+df_combined = pd.concat([X, y.reset_index(drop=True)], axis=1)
+
+# Get the list of feature names
+feature_names = X.columns
+
+# Set up the figure and axes for subplots
+# Determine grid size. For 11 features, 3x4 or 4x3 might be good.
+# Let's go with 3 rows and 4 columns to accommodate all 11 features + one empty spot
+fig, axes = plt.subplots(nrows=3, ncols=4, figsize=(20, 15), sharex=True)
+axes = axes.flatten() # Flatten the 2D array of axes for easy iteration
+
+# Iterate through each feature and create a box plot
+for i, feature in enumerate(feature_names):
+    sns.boxplot(x='quality', y=feature, data=df_combined, ax=axes[i], palette='viridis')
+    axes[i].set_title(f'Distribution of {feature.replace("_", " ").title()} by Quality')
+    axes[i].set_xlabel('Quality Score')
+    axes[i].set_ylabel(feature.replace("_", " ").title())
+    axes[i].grid(axis='y', linestyle='--', alpha=0.7)
+
+# Remove any unused subplots
+for j in range(len(feature_names), len(axes)):
+    fig.delaxes(axes[j])
+
+plt.tight_layout()
+plt.suptitle('Box Plots of Input Features by Wine Quality Score', y=1.02, fontsize=20)
+plt.show()
+
+These scatter plots illustrate the relationship between two input features, with the points colored according to the wine quality score. This can reveal patterns, clusters, or trends where certain combinations of feature values are associated with higher or lower quality wines. For instance, you might observe regions in the plot where high-quality wines tend to cluster, indicating optimal ranges for these feature pairs.
+```
 
 
 ![Image 3](3.png)
+
+
+
+THE CODE :
+```python
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Ensure df_combined is available (it was created in a previous step for box plots)
+# If it wasn't, uncomment and run the following line:
+# df_combined = pd.concat([X, y.reset_index(drop=True)], axis=1)
+
+# Plot 1: Alcohol vs Volatile Acidity colored by Quality
+plt.figure(figsize=(10, 7))
+sns.scatterplot(x='volatile_acidity', y='alcohol', hue='quality',
+                data=df_combined, palette='viridis', s=50, alpha=0.6)
+plt.title('Alcohol vs Volatile Acidity (Colored by Quality)')
+plt.xlabel('Volatile Acidity')
+plt.ylabel('Alcohol')
+plt.legend(title='Quality Score')
+plt.grid(True, linestyle='--', alpha=0.6)
+plt.show()
+
+# Plot 2: Citric Acid vs Volatile Acidity colored by Quality
+plt.figure(figsize=(10, 7))
+sns.scatterplot(x='volatile_acidity', y='citric_acid', hue='quality',
+                data=df_combined, palette='viridis', s=50, alpha=0.6)
+plt.title('Citric Acid vs Volatile Acidity (Colored by Quality)')
+plt.xlabel('Volatile Acidity')
+plt.ylabel('Citric Acid')
+plt.legend(title='Quality Score')
+plt.grid(True, linestyle='--', alpha=0.6)
+plt.show()
 
 
 This heatmap displays the pairwise correlation coefficients between all the features and the target variable ('quality').
@@ -133,31 +224,8 @@ This plot is useful for quickly identifying which features might be strongly pre
 
 
 hese violin plots compare the distributions of each physicochemical feature for red versus white wines. Each plot shows the density estimation of the feature's values for each wine color, allowing you to easily see differences in median, spread, and overall shape of the distributions between the two types of wine. This can highlight features that are distinct characteristics of red or white wines.
+```
 
-
-![Image 4](4.png)
-
-
-These bar charts display the average value of each physicochemical feature for each wine quality score. This visualization helps to clearly see trends: whether the average of a particular feature generally increases, decreases, or stays relatively stable as the wine quality improves or declines. This can provide direct insights into which chemical properties are most strongly associated with different quality ratings.
-
-
-
-![Image 5](5.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+!
 
 
