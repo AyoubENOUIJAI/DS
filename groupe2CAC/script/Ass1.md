@@ -107,8 +107,7 @@ print(wine_quality.variables)
 This histogram visualizes the frequency of each wine quality score. You can see which scores are most common and the overall distribution of quality in the dataset.
 
 
-INSERT IMAGE HERE
-
+![Image 3](3.png)
 
 These box plots visualize the distribution of each physicochemical input feature across different wine quality scores. This can help identify which features tend to have higher or lower values for wines with better or worse quality, suggesting potential relationships between the features and the target variable.
 
