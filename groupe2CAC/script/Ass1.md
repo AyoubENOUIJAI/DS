@@ -72,33 +72,36 @@ The dataset’s main goal is to explore the relationship between **objective che
 
 ---
 
-## 📊 Ideas for Visualization
+🧪 Wine Quality Analysis — Code Summary
 
-Here are some basic charts you can build to explore and explain the dataset:
+This notebook analyzes the Wine Quality dataset (from the UCI Machine Learning Repository).
+You have already documented the dataset and its variables, so this summary focuses on the code workflow and visualization process.
 
-1. **Histogram of Quality Scores**
-   - Shows the frequency of each quality rating.
-   - Helps visualize class imbalance.
+📦 1. Importing and Fetching the Dataset
+!pip install ucimlrepo
+from ucimlrepo import fetch_ucirepo
 
-2. **Boxplots or Violin Plots**
-   - Compare variables like `alcohol`, `sulphates`, or `volatile_acidity` across quality levels.
+# Fetch dataset
+wine_quality = fetch_ucirepo(id=186)
 
-3. **Correlation Heatmap**
-   - Displays pairwise correlations between features and `quality`.
-   - Identifies which features are most strongly associated with quality.
+# Extract features and targets
+X = wine_quality.data.features
+y = wine_quality.data.targets
 
-4. **Scatter Plots**
-   - Example: `alcohol` vs `density`, colored by `quality`.
-   - Reveals patterns or clusters related to wine type or score.
+# Display metadata and variable info
+print(wine_quality.metadata)
+print(wine_quality.variables)
 
-5. **Bar Chart of Mean Feature Values by Quality Group**
-   - Groups wines by low/medium/high quality and compares average feature values.
 
-6. **Red vs White Comparison**
-   - Overlay histograms or boxplots for red vs white wines on features like `pH`, `density`, or `residual_sugar`.
+Explanation:
 
----
+The dataset is fetched directly from the UCI repository using the ucimlrepo library.
 
+X contains the wine’s physicochemical features (e.g., acidity, sugar, etc.).
+
+y holds the quality score assigned to each wine sample.
+
+Metadata and variable details are displayed for reference.
 ## 📚 References
 
 - [UCI Machine Learning Repository — Wine Quality Dataset](https://archive.ics.uci.edu/dataset/186/wine+quality)  
